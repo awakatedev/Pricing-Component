@@ -1,15 +1,55 @@
+/*--------------------------------------*\
+        DWITCH PRICES
+\*--------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
 }
 :root {
-  very_light_grayish_blue: hsl(240, 78%, 98%);
-  light_grayish_blue: hsl(234, 14%, 74%);
-  grayish_blue: hsl(233, 13%, 49%);
-  dark_grayish_blue: hsl(232, 13%, 33%);
+  --very_light_grayish_blue: hsl(240, 78%, 98%);
+  --light_grayish_blue: hsl(234, 14%, 74%);
+  --grayish_blue: hsl(233, 13%, 49%);
+  --dark_grayish_blue: hsl(232, 13%, 33%);
 }
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 65.5%;
   font-weight: 700;
+}
+
+/*--------------------------------------*\
+        SWITCH PRICES
+\*--------------------------------------*/
+#switch {
+  display: none;
+}
+.lbl {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: var(--grayish_blue);
+  border-radius: 1000px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.7s;
+}
+.lbl::after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 5px;
+  right: unset;
+  border-radius: 100px;
+  background-color: #fff;
+  transition: 0.7s;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#switch:checked + .lbl::after {
+  left: 35px;
 }
