@@ -7,6 +7,7 @@
   padding: 0;
 }
 :root {
+  --background-gradient: linear-gradient(#a3a8f0, #696fdd);
   --very_light_grayish_blue: hsl(240, 78%, 98%);
   --light_grayish_blue: hsl(234, 14%, 74%);
   --grayish_blue: hsl(233, 13%, 49%);
@@ -28,7 +29,7 @@ html {
   display: inline-block;
   width: 60px;
   height: 30px;
-  background-color: var(--grayish_blue);
+  background: var(--background-gradient);
   border-radius: 1000px;
   border: none;
   outline: none;
