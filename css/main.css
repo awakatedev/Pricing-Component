@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 :root {
-  /* --linear_gradient-1: hsl(236, 72%, 79%);
-  --linear_gradient-2: hsl(237, 63%, 64%); */
+  --linear_gradient_1: hsl(236, 72%, 79%);
+  --linear_gradient_2: hsl(237, 63%, 64%);
   --very_light_grayish_blue: hsl(240, 78%, 98%);
   --light_grayish_blue: hsl(234, 14%, 74%);
   --grayish_blue: hsl(233, 13%, 49%);
   --dark_grayish_blue: hsl(232, 13%, 33%);
 }
-body {
+html {
   /* height: 100vh; */
   font-family: "Montserrat", sans-serif;
   font-size: 65.5%;
@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6
   right: 0;
   bottom: 0;
   border-radius: 50px;
-  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background: linear-gradient(to right, var(--linear_gradient_1), var(--linear_gradient_2));
   transition: 0.3s;
 }
 .slider:hover
@@ -140,7 +140,7 @@ input:checked + .slider::before
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
 .title
@@ -180,8 +180,7 @@ input:checked + .slider::before
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
-  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  /* cursor: pointer; */
+  background: linear-gradient(to right, var(--linear_gradient_1), var(--linear_gradient_2));
   outline: none;
 }
 .button:hover
@@ -193,10 +192,8 @@ input:checked + .slider::before
 
 .card-two
 {
-  background:linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background:linear-gradient(to bottom, var(--linear_gradient_1), var(--linear_gradient_2));
   color: var(--very_light_grayish_blue);
-  /* z-index: 100; */
-  /* transform: scale(1.1); */
 }
 
 .card-two .title, .card-two .price
@@ -208,7 +205,7 @@ input:checked + .slider::before
 {
   border-color: var(--light_grayish_blue);
   background: var(--very_light_grayish_blue);
-  color: hsl(237, 63%, 64%);
+  color: var(--linear_gradient_2);
 }
 
 .card-two .button:hover
