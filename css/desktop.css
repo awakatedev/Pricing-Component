@@ -1,0 +1,13 @@
+/*---------------------\
+    DESKTOP VERTION
+ \---------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+}
+.card {
+  width: 100%;
+}
+.card-two {
+  padding: 4.5em 1em;
+}

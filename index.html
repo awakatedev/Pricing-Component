@@ -4,37 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/desktop.css" media="min-width: 1440px" />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="(min-width: 900px)"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <title>Pricing component with toggle</title>
   </head>
   <body>
+    <!-- TOGGLE -->
+    <header class="toggle-container">
+      <h2 class="toggle-title">Our Pricing</h2>
+      <div class="toggle">
+        <p>Annually</p>
+        <label class="toggle-box">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p>Monthly</p>
+      </div>
+    </header>
+
     <main>
-        <div class="background-top">
-          <img src="./images/bg-top.svg" alt="">
-        </div>
-        <!-- <div class="background-bottom">
-          <img src="./images/bg-bottom.svg" alt="">
-        </div> -->
-        
-      <!-- TOGGLE -->
-      <section class="toggle-container">
-        <h2 class="toggle-title">Our Pricing</h2>
-        <div class="toggle">
-          <p>Annually</p>
-          <label class="toggle-box">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-          <p>Monthly</p>
-        </div>
-      </section>
-      
       <!-- CARDS -->
       <section class="cards">
         <article class="card card-one">
@@ -73,5 +75,4 @@
       </section>
     </main>
   </body>
-  </html>
-
+</html>
