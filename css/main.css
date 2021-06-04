@@ -35,14 +35,31 @@ h6 {
   color: var(--dark_grayish_blue);
 }
 body {
-  width: 100%;
-  min-width: 320px;
-  background-image: url(../images/bg-top.svg);
-  background-size: 350px;
-  background-position: top;
-  background-repeat: no-repeat;
+  width: 100vw;
 }
-
+header {
+  width: 100%;
+}
+main {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+.bgTop {
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.bgTop img {
+  margin-top: -50px;
+  margin-right: -180px;
+}
+.bgBottom {
+  display: none;
+}
 /* TOGGLE BUTTON */
 .toggle-container {
   display: flex;
@@ -117,7 +134,7 @@ input:checked + .slider::before {
   transform: translateX(26px);
   -webkit-transform: translateX(26px);
 }
-input:checked + .price.monthly {
+input:checked.price.monthly {
   display: block;
 }
 
