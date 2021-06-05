@@ -177,6 +177,12 @@ input:checked.price.monthly {
 .price.monthly {
   display: none;
 }
+.show-monthly .price.annually {
+  display: none;
+}
+.show-monthly .price.monthly {
+  display: block;
+}
 
 .benefits {
   width: 80%;
